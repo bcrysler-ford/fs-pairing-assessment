@@ -1,20 +1,17 @@
 # Setup
 Run this command if you have a GitHub SSH key set up on your device:
 ```
-git clone -b startingPoint git@github.com:bcrysler-ford/wyft.git
+git clone -b startingPoint git@github.com:bcrysler-ford/fs-pairing-assessment.git
 ```
 Run this command if you need to authenticate with username and password:
 ```
-git clone -b startingPoint https://github.com/bcrysler-ford/wyft.git
+git clone -b startingPoint https://github.com/bcrysler-ford/fs-pairing-assessment.git
 ```
 
 # Instructions
-The above clone commands will get you the "starting point" of this codebase. Some basic framework is provided.
-The controller/service/repository structure has been created for you, as well as a test suite.
-2 passing tests and 1 failing test have been provided to you. The rest of the tests need to be implemented. A method name
-and comment have been provided on the rest of the tests to guide you in writing them.
-The Ford Foundational Services Engineer and the interview candidate will pair in a navigator/driver manner on this project.
-TDD is to be followed to make the failing test pass, and to write the rest of the tests and code.
+The above clone commands will get you the "starting point" of this codebase, where some basic framework is provided.
+The controller/service/repository structure has been created for you, as well as a test suite, where 2 passing tests and 1 failing test have been provided to you. For the rest of the tests, a method name and descriptive comment has been provided to assist with writing effective tests.
+The Ford Foundational Services Engineer and the interview candidate will pair in a navigator/driver manner on this project, following TDD to write the rest of the tests and implement the project.
 
 
 # Problem Statement
