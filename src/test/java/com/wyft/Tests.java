@@ -1,9 +1,7 @@
 package com.wyft;
 
 import com.wyft.controllers.RideController;
-import com.wyft.models.Driver;
 import com.wyft.models.Ride;
-import com.wyft.models.requests.RideRequest;
 import com.wyft.repositories.RideRepository;
 import com.wyft.services.RideService;
 
@@ -27,21 +25,19 @@ public class Tests {
 
 	// When a ride is requested, it must be registered in the database.
 	public void hailRideShouldAddRideToRepository(){
+		//set up objects required for test
 		Ride currentRide = new Ride(1,3,70);
+
+		//execute test scenario
 		rideController.hailRide(currentRide);
+
+		//test results
 		TestHelper.assertEquals(1, rideRepository.getSize());
 	}
 
-	// A driver must be able to accept the ride request and receive the directions
-	public void acceptRideShouldReturnDirectionsToPointA_ifDriverIsWithinRange(){
-		Ride currentRide = new Ride(1,3,70);
-		Driver currentDriver = new Driver(10);
-		RideRequest rideRequest = new RideRequest(currentDriver, 1);
-
-		rideController.hailRide(currentRide);
-
-		TestHelper.assertEquals("Proceed to point A", rideController.acceptRide(rideRequest));
-	}
+//	// A driver must be able to accept the ride request and receive the directions
+//	public void acceptRideShouldReturnDirectionsToPointA_ifDriverIsWithinRange(){
+//	}
 
 //	// Only 1 driver can accept a ride request.
 //	public void acceptRideShouldReturnAlreadyAccepted_whenRideAlreadyAccepted(){

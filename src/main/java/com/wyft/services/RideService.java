@@ -12,31 +12,17 @@ public class RideService {
 		this.rideRepository = rideRepository;
 	}
 
-	public void createRide(Ride rideToCreate){
-		rideRepository.addRide(rideToCreate);
-	}
+	public void createRide(Ride rideToCreate){ rideRepository.addRide(rideToCreate); }
 
-	public int acceptRide(Driver driver, Integer acceptedRideID){
-	    //check the logic for whether or not a ride can be accepted, then invoke a repository method to accept it
+	//create a method called acceptRide
+	//it must check the logic for whether or not a ride can be accepted, then invoke a repository method to accept it
 
-		return -999;
-	}
+	//create a method called startRide
+	//it must check the logic for whether or not a ride can be started, then invoke a repository method to start it
 
-	public boolean startRide(int rideID, int driverLocation){
-	    //check the logic for whether or not a ride can be started, then invoke a repository method to start it
+	//create a method called endRide
+	//it must check the logic for whether or not a ride can be started, then invoke a repository method to start it
 
-		return false;
-	}
-
-	public boolean endRide(int rideID, int driverLocation){
-	    //check the logic for whether or not a ride can be started, then invoke a repository method to start it
-
-		return false;
-	}
-
-	public int cancelRide(int rideID, int driverLocation) {
-	    //check the logic for whether or not a ride can be cancelled, then invoke a repository method to cancel it
-
-		return -999;
-	}
+	//create a method called cancelRide
+	//it must check the logic for whether or not a ride can be cancelled, then invoke a repository method to cancel it
 }

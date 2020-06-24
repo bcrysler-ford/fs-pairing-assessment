@@ -20,25 +20,20 @@ public class RideRepository {
 		this.rideDatabase.put(rideToAdd.getRideID(), rideToAdd);
 	}
 
-//	public Ride getRideInfo(int rideID){
-//		//retrieve a ride object
-//	}
+	//create a method called getRideInfo
+	//it must retrieve a ride object
 
-	public void setRideToAccepted(Integer rideID){
-		//get a ride from the database, and set its status to Accepted
-	}
+	//create a method called setRideToAccepted
+	//it must get a ride from the database, and set its status to Accepted
 
-	public void startRide(Integer rideID){
-		//get a ride from the database, and set its status to In Progress
-	}
+	//create a method called startRide
+	//it must get a ride from the database, and set its status to In Progress
 
-	public void endRide(Integer rideID){
-		//get a ride from the database, and set its status to Ended
-	}
+	//create a method called endRide
+	//it must get a ride from the database, and set its status to Ended
 
-	public void cancelRide(Integer rideID) {
-		//get a ride from the database, and set its status to Cancelled
-	}
+	//create a method called cancelRide
+	//it must get a ride from the database, and set its status to Cancelled
 
 	public int getSize(){
 		return rideDatabase.size();
